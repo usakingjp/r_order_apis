@@ -1,7 +1,7 @@
 name: r_order_apis
 description: "This package is intended to simplify the use of Rakuten Market (Japan)'s <Order API>. It is assumed that the store will use it."
 version: 0.0.1
-homepage:
+homepage: "https://github.com/usakingjp/r_order_apis"
 
 environment:
   sdk: '>=3.3.3 <4.0.0'

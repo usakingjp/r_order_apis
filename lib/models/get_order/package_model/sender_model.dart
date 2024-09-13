@@ -1,31 +1,57 @@
 class SenderModel {
   SenderModel({
-    required this.zipCode1, //郵便番号1
-    required this.zipCode2, //郵便番号2
-    required this.prefecture, //都道府県
-    required this.city, //郡市区
-    required this.subAddress, //それ以降の住所
-    required this.familyName, //姓
-    this.firstName, //名
-    this.familyNameKana, //姓カナ
-    this.firstNameKana, //名カナ
-    required this.phoneNumber1, //電話番号1
-    required this.phoneNumber2, //電話番号2
-    required this.phoneNumber3, //電話番号3
-    required this.isolatedIslandFlag, //離島フラグ
+    required this.zipCode1,
+    required this.zipCode2,
+    required this.prefecture,
+    required this.city,
+    required this.subAddress,
+    required this.familyName,
+    this.firstName,
+    this.familyNameKana,
+    this.firstNameKana,
+    required this.phoneNumber1,
+    required this.phoneNumber2,
+    required this.phoneNumber3,
+    required this.isolatedIslandFlag,
   });
+
+  /// 郵便番号1
   String zipCode1;
+
+  /// 郵便番号2
   String zipCode2;
+
+  /// 都道府県
   String prefecture;
+
+  /// 郡市区
   String city;
+
+  /// それ以降の住所
   String subAddress;
+
+  /// 姓
   String familyName;
+
+  /// 名
   String? firstName;
+
+  /// 姓カナ
   String? familyNameKana;
+
+  /// 名カナ
   String? firstNameKana;
+
+  /// 電話番号1
   String phoneNumber1;
+
+  /// 電話番号2
   String phoneNumber2;
+
+  /// 電話番号3
   String phoneNumber3;
+
+  /// 離島フラグ
   int isolatedIslandFlag;
 
   SenderModel.fromJson(Map<String, dynamic> json)

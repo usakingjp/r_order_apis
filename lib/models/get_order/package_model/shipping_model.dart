@@ -1,16 +1,20 @@
 class ShippingModel {
   ShippingModel({
-    required this.shippingDetailId, //発送明細ID
-    this.shippingNumber, //お荷物伝票番号
-    this.deliveryCompany, //配送会社
-    this.deliveryCompanyName, //配送会社名
-    this.shippingDate, //発送日
+    required this.shippingDetailId,
+    this.shippingNumber,
+    this.deliveryCompany,
+    this.deliveryCompanyName,
+    this.shippingDate,
   });
 
+  /// 発送明細ID
   // 楽天が発行するIDで更新・削除の場合に利用します
   final int? shippingDetailId;
+
+  /// お荷物伝票番号
   String? shippingNumber;
 
+  /// 配送会社
   // 1000: その他
   // 1001: ヤマト運輸
   // 1002: 佐川急便
@@ -42,9 +46,11 @@ class ShippingModel {
   // 1028: Rakuten EXPRESS
   String? deliveryCompany;
 
+  /// 配送会社名
   // 例）ヤマト運輸
   String? deliveryCompanyName;
 
+  /// 発送日
   String? shippingDate;
 
   ShippingModel.fromJson(Map<String, dynamic> json)

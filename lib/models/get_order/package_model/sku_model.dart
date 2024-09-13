@@ -1,16 +1,19 @@
 class SkuModel {
   SkuModel({
-    required this.variantId, //SKU管理番号
-    this.merchantDefinedSkuId, //システム連携用SKU番号
-    this.skuInfo, //SKU情報
+    required this.variantId,
+    this.merchantDefinedSkuId,
+    this.skuInfo,
   });
 
+  ///SKU管理番号
   // SKU移行前の注文の場合、値は空になります。
   final String variantId;
 
+  /// システム連携用SKU番号
   // SKU移行前の注文の場合、値は空になります。
   final String? merchantDefinedSkuId;
 
+  /// SKU情報
   // 以下のルールで値が入ります。
   // SKU移行前注文：値は空になります。
   // SKU移行後注文：バリエーション項目名・バリエーション選択肢（旧・項目選択肢別在庫情報）が入ります。
